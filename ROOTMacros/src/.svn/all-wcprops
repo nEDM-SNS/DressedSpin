@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sim/!svn/ver/45/DressedSpin/ROOTMacros/src
+END
+LinkDef.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sim/!svn/ver/44/DressedSpin/ROOTMacros/src/LinkDef.h
+END
+SpinsTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sim/!svn/ver/45/DressedSpin/ROOTMacros/src/SpinsTree.h
+END
+process_spin_files.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sim/!svn/ver/45/DressedSpin/ROOTMacros/src/process_spin_files.cpp
+END
+SpinsTree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sim/!svn/ver/45/DressedSpin/ROOTMacros/src/SpinsTree.cpp
+END

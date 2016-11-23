@@ -1,0 +1,13 @@
+
+# set holding field (vector)
+/BlochEq/SetB0 0 0 8.0 gauss
+
+# set dressing field parameters
+/BlochEq/SetB1 0. 5. 0. gauss
+/BlochEq/SetB1freq 7500 hertz
+/BlochEq/SetB1phase 0
+
+/BlochEq/ShowParameters
+
+/run/beamOn 1
+

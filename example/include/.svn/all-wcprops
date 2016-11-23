@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sim/!svn/ver/34/DressedSpin/example/include
+END
+detector_mcgregor90.hh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sim/!svn/ver/34/DressedSpin/example/include/detector_mcgregor90.hh
+END
+examplePhysicsList.hh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sim/!svn/ver/34/DressedSpin/example/include/examplePhysicsList.hh
+END
+BlochEq_mcgregor90.hh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sim/!svn/ver/34/DressedSpin/example/include/BlochEq_mcgregor90.hh
+END

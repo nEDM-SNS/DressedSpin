@@ -1,0 +1,58 @@
+#include "fitField.h"
+#include <math.h>
+
+#ifdef ROOTMacros
+ClassImp(fitField)
+#include <iostream>
+#define G4cout std::cout
+#define G4endl std::endl
+#else
+#include "globals.hh"
+#endif
+
+fitField::fitField()
+{
+}
+
+fitField::~fitField()
+{
+}
+
+#ifdef ROOTMacros
+// use a different prototype if compiled for a ROOT session
+void fitField::GetFieldVector(double x, double y, double z,
+ double &Bx, double &By, double &Bz)
+{
+
+
+#else
+G4ThreeVector fitField::GetFieldVector(const G4ThreeVector &p)
+{
+  double vec[3];
+  x = p.x()/cm;
+  y = p.y()/cm;
+  z = p.z()/cm;
+#endif
+
+
+//Convert to Meters
+x = x/100.0;
+y = y/100.0;
+z = z/100.0;
+
+//Fit of Fieldmap from CalTech Jan. 2010, done by Riccardo Schmid
+  Bx = -0.0000121782*x*x - 0.0000221964*x*y - 0.0000358358*x*z - 1.14144*pow(10,-6)*x + 3.16458*pow(10,-6)*y*y + 7.93258*pow(10,-6)*y*z - 0.0000239044*y - 9.78196*pow(10,-6)*z*z - 3.32607*pow(10,-6)*z + 0.00999411;
+
+  By = -0.0000549998*x*x - 9.32251*pow(10,-6)*x*y - 0.000014762*x*z + 0.000032055*x - 0.0000236904*y*y + 0.0000350975*y*z - 1.68759*pow(10,-6)*y - 0.0000272703*z*z - 0.0000336811*z + 0.0000783447;
+
+  Bz = -0.0000402876*x*x - 0.000203037*x*y + 0.0000336788*x*z + 0.0000225171*x + 0.0000264227*y*y + 0.0000695772*y*z - 0.000018972*y + 3.69106*pow(10,-7)*z*z + 2.82903*pow(10,-6)*z + 0.000247686;
+
+//G4cout << "GetFieldVector returned: (" << Bx << ", " << By << ", " << Bz << ")" << G4endl;
+
+#if ROOTMacros
+
+#else
+  return G4ThreeVector(Bx, By, Bz);
+#endif
+}
+

@@ -1,0 +1,13 @@
+# set kinetic parameters
+/kinetics/SetTemperature 300
+/kinetics/SetPressure 1.0
+/kinetics/ShowParameters
+
+# (holding field is hard-coded to be 0.53 gauss along the z-direction)
+# set field gradient (dH_z/dx,dH_z/dy,dH_z/dz) in nT/cm
+/BlochEq/SetGradient 10 0 0
+/BlochEq/SetGradFreq 60 hertz
+/BlochEq/ShowParameters
+
+/run/beamOn 1
+

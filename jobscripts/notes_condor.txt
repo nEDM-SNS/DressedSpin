@@ -1,0 +1,16 @@
+To submit the jobs:
+    condor_submit uiuc-npl.condor
+In the condor script, make sure the file paths are correct or change
+if necessary.  Relative paths are with respect to the directory in
+which condor_submit was invoked.
+
+
+To see all jobs remaining in the condor queue:
+    condor_q
+
+
+To see which machines your jobs are running on (replace smclayto with
+your username):
+    condor_status -constraint 'RemoteUser == "smclayto@physics.uiuc.edu"'
+
+

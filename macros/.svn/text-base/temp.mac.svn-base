@@ -1,0 +1,23 @@
+# set kinetic parameters
+/kinetics/SetTemperature 0.4
+/kinetics/ShowParameters
+
+# set B-fields
+/BlochEq/SetHoldingFieldAtOrigin 0.01 gauss
+
+
+/BlochEq/SetDressingFieldRadius 10 cm
+# choose Y = 0.8 = gamma*B0/(2*pi*f1)
+# For 0.400 gauss, gamma*B0 = 8157.5852 rad/s.
+#   f1 = gamma*B0/(2*pi*Y) = 1622.9 hertz
+# X = gamma*B1/(2*pi*f1)
+#   B1 = 2*pi*f1*X/gamma = 0.5*X gauss
+# /BlochEq/SetDressingFieldAtOrigin 0.0843 gauss
+/BlochEq/SetDressingFieldAtOrigin 0.000 gauss
+/BlochEq/SetDressingFieldFreq 1625 hertz
+
+/BlochEq/ShowParameters
+
+# /run/beamOn 10
+/FieldMap/Compute
+

@@ -1,0 +1,45 @@
+# set kinetic parameters
+/kinetics/SetTemperature 0.4
+/kinetics/ShowParameters
+
+# Bfield in x direction.
+# set spin(t=0) = 1 0 0 for a T1 measurement,
+# or transverse to this for a T2 measurement.
+/gun/polarization 0 0 1
+# /gun/polarization 1 0 0
+
+# set B0 field nominal magnitude
+/BlochEq/SetHoldingFieldAtOrigin 0.01 gauss
+# scale deviations of B0 field from its ideal value
+# /BlochEq/ScaleHoldingFieldDeviations 3
+
+
+/BlochEq/SetDressingFieldFreq 0
+/BlochEq/SetDressingFieldAtOrigin 0
+
+# choose Y = 0.8 = gamma*B0/(2*pi*f1)
+# gamma = -20393.963 rad/s/gauss
+# For B0 = 0.010 gauss, gamma*B0 = 203.93963 rad/s.
+#   f1 = gamma*B0/(2*pi*Y) = 40.5725 hertz
+# /BlochEq/SetDressingFieldFreq 40.5725 hertz
+# X = gamma*B1/(2*pi*f1) = Y*B1/B0
+#   B1 = B0*X/Y
+# /BlochEq/SetDressingFieldAtOrigin 1.25e-2 gauss
+# /BlochEq/SetDressingFieldAtOrigin 0
+
+# choose Y = 0.01 = gamma*B0/(2*pi*f1)
+# gamma = -20393.963 rad/s/gauss
+# For B0 = 0.010 gauss, gamma*B0 = 203.93963 rad/s.
+#   f1 = gamma*B0/(2*pi*Y) = 3245.8 hertz
+# /BlochEq/SetDressingFieldFreq 3245.8 hertz
+# X = gamma*B1/(2*pi*f1) = Y*B1/B0
+#   B1 = B0*X/Y
+#   X = 1.19, B1 = 1.19;
+# /BlochEq/SetDressingFieldAtOrigin 1.19 gauss
+
+
+/BlochEq/ShowParameters
+
+/run/beamOn 1
+# /FieldMap/Compute
+

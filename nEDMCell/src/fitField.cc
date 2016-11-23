@@ -1,0 +1,71 @@
+#include "fitField.hh"
+#include <math.h>
+
+#ifdef ROOTMacros
+ClassImp(fitField)
+#include <iostream>
+#define G4cout std::cout
+#define G4endl std::endl
+#else
+#include "globals.hh"
+#endif
+
+fitField::fitField()
+{
+fB0x_norm = 0.01;
+fScaleDevs = 1.0;
+}
+
+fitField::~fitField()
+{
+}
+
+#ifdef ROOTMacros
+// use a different prototype if compiled for a ROOT session
+void fieldmapFile::GetFieldVector(Float_t x, Float_t y, Float_t z,
+ Double_t *pBx, Double_t *pBy, Double_t *pBz)
+{
+  double vec[3];
+  vec[0] = x/10; // x,y,z in mm
+  vec[1] = y/10;
+  vec[2] = z/10;
+
+#else
+G4ThreeVector fitField::GetFieldVector(const G4ThreeVector &p)
+{
+  double x,y,z,Bx,By,Bz;
+
+//Coordinates in Meters
+  x = p.x()/m;
+  y = p.y()/m;
+  z = p.z()/m;
+#endif
+
+//Fit of Fieldmap from CalTech Jan. 2010, done by Riccardo Schmid
+  Bx = -0.0000121782*x*x - 0.0000221964*x*y - 0.0000358358*x*z - 1.14144*pow(10,-6)*x + 3.16458*pow(10,-6)*y*y + 7.93258*pow(10,-6)*y*z - 0.0000239044*y - 9.78196*pow(10,-6)*z*z - 3.32607*pow(10,-6)*z + 0.00999411;
+
+  By = -0.0000549998*x*x - 9.32251*pow(10,-6)*x*y - 0.000014762*x*z + 0.000032055*x - 0.0000236904*y*y + 0.0000350975*y*z - 1.68759*pow(10,-6)*y - 0.0000272703*z*z - 0.0000336811*z + 0.0000783447;
+
+  Bz = -0.0000402876*x*x - 0.000203037*x*y + 0.0000336788*x*z + 0.0000225171*x + 0.0000264227*y*y + 0.0000695772*y*z - 0.000018972*y + 3.69106*pow(10,-7)*z*z + 2.82903*pow(10,-6)*z + 0.000247686;
+
+//G4cout << "GetFieldVector returned: (" << Bx << ", " << By << ", " << Bz << ")" << G4endl;
+
+  G4double normalized_Bx = Bx/fB0x_norm;
+  G4double normalized_By = By/fB0x_norm;
+  G4double normalized_Bz = Bz/fB0x_norm;
+
+  // scale deviations from ideal values: normalized B_ideal = (1,0,0)
+  G4double val_x = 1 + fScaleDevs*(normalized_Bx - 1);
+  G4double val_y = fScaleDevs*normalized_By;
+  G4double val_z = fScaleDevs*normalized_Bz;
+
+#if ROOTMacros
+  *pBx = val_x;
+  *pBy = val_y;
+  *pBz = val_z;
+#else
+//  return G4ThreeVector(Bx, By, Bz);
+  return G4ThreeVector(val_x, val_y, val_z);
+#endif
+}
+

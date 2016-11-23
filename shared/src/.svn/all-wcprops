@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sim/!svn/ver/57/DressedSpin/shared/src
+END
+dressedSpinMessenger.cc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/dressedSpinMessenger.cc
+END
+dressedSpinPrimaryGeneratorAction.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sim/!svn/ver/45/DressedSpin/shared/src/dressedSpinPrimaryGeneratorAction.cc
+END
+HeVaporPressure.cc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/HeVaporPressure.cc
+END
+BlochEq_vxE.cc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/BlochEq_vxE.cc
+END
+helmholtzCoils.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/helmholtzCoils.cc
+END
+He3Atom.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/He3Atom.cc
+END
+dressedSpinRunManager.cc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/dressedSpinRunManager.cc
+END
+diffusionMaterial.cc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/diffusionMaterial.cc
+END
+dressedSpinParameters.cc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sim/!svn/ver/57/DressedSpin/shared/src/dressedSpinParameters.cc
+END
+periodicStepping.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sim/!svn/ver/50/DressedSpin/shared/src/periodicStepping.cc
+END
+BlochEq.cc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sim/!svn/ver/44/DressedSpin/shared/src/BlochEq.cc
+END
+MixingFraction.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/MixingFraction.cc
+END
+fieldMap.cc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/fieldMap.cc
+END
+dressedSpinPhysicsList.cc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/dressedSpinPhysicsList.cc
+END
+dressedSpinEventAction.cc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/dressedSpinEventAction.cc
+END
+neutralSpinRotation.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/neutralSpinRotation.cc
+END
+diffusionProcess.cc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/diffusionProcess.cc
+END
+dressedSpinDetectorConstruction.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sim/!svn/ver/34/DressedSpin/shared/src/dressedSpinDetectorConstruction.cc
+END
+diffusionBoundaryProcess.cc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sim/!svn/ver/50/DressedSpin/shared/src/diffusionBoundaryProcess.cc
+END

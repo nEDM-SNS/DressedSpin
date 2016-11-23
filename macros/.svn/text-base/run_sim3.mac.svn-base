@@ -1,0 +1,16 @@
+# set kinetic parameters
+/kinetics/SetTemperature 0.4
+/kinetics/ShowParameters
+
+# set B-fields
+/BlochEq/SetHoldingFieldAtOrigin 0.01 gauss
+
+# set E-field magnitude in V/cm
+/BlochEq/SetElectricFieldAtOrigin 100000
+
+
+/BlochEq/ShowParameters
+
+/run/beamOn 10
+# /FieldMap/Compute
+

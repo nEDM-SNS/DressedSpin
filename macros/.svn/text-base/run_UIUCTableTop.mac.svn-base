@@ -1,0 +1,24 @@
+# set kinetic parameters
+/kinetics/SetTemperature 300
+/kinetics/SetPressure 1.0
+/kinetics/ShowParameters
+
+#set initial polarization in the x-direction
+/gun/polarization 1 0 0
+
+# set B-fields
+/BlochEq/SetHoldingFieldRadius 50.0 cm
+/BlochEq/SetHoldingFieldAtOrigin 0.260 gauss
+
+/BlochEq/SetEarthCompFieldRadius 25.4 cm
+/BlochEq/SetEarthCompFieldAtOrigin 0.66375 gauss
+
+/BlochEq/SetDressingFieldRadius 10 cm
+/BlochEq/SetDressingFieldAtOrigin 0.0843 gauss
+/BlochEq/SetDressingFieldFreq 1625 hertz
+
+/BlochEq/ShowParameters
+
+/run/beamOn 1
+# /FieldMap/Compute
+

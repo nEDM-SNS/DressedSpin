@@ -1,0 +1,17 @@
+
+To run, specify some combination of input files a.mac and b.mac,
+and output file c.root, where a,b,c stand for the actual file names.
+e.g., "beamExpt a.mac b.dat c.root"
+ 
+All files are optional.
+  1) If the macro file a.mac is omitted, an interactive session will
+     be started.
+  2) If the macro file a.mac is specified AND so is the velocity
+     distribution data file b.dat, the simulation will loop over
+     the lines in b.dat and put the weighted sums of the spins
+     components (at the detector) in the histogram hAccumSpin.
+     The format of b.dat is:
+        [velocity (m/s)]  [weight]
+  3) If no ROOT output filename is specified, it will be set to
+     "temp.root" in the current directory.
+

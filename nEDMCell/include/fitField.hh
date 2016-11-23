@@ -1,0 +1,46 @@
+#ifndef fitField_h
+#define fitField_h 1
+
+#ifdef ROOTMacros
+#define G4double double
+#else
+#include "globals.hh"
+#include "G4ThreeVector.hh"
+#endif
+
+class fitField 
+{
+  public:
+
+  fitField();
+  virtual ~fitField();
+
+#ifdef ROOTMacros
+    void GetFieldVector(Float_t x, Float_t y, Float_t z,
+                        Double_t *pBx, Double_t *pBy, Double_t *pBz);
+#else
+    G4ThreeVector GetFieldVector(const G4ThreeVector &p);
+    // returns normalized field (i.e., scaled by fB0x_norm)
+#endif
+
+    G4double GetFieldNormalization() { return fB0x_norm; }
+    G4double GetScaleDevsFactor() { return fScaleDevs; }
+    void SetScaleDevsFactor(G4double val) { fScaleDevs = val; }
+
+    // this method should not normally be used.
+    void setB0x_norm(double val) { fB0x_norm = val; }
+
+  protected:
+
+    G4double fScaleDevs; // amount to scale deviations from ideal field
+    G4double fB0x_norm; // normalization factor of field values
+
+
+#ifdef ROOTMacros
+  ClassDef(fitField, 1)
+#endif
+
+};
+
+#endif
+

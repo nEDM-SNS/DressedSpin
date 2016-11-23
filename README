@@ -1,0 +1,46 @@
+**********************************************************************
+How to build:
+
+0) Geant4 must be installed on your system, and the appropriate environment
+   variables (G4INSTALL, G4LIB, etc.) must be set.
+1) create a Geant4 working directory in your home directory and set the
+   environment variable G4WORKDIR to this directory.
+     Example:
+      > mkdir $HOME/geant4
+      > export G4WORKDIR=$HOME/geant4
+   The working directory is used in the build process to store intermediate
+   object files (in $G4WORKDIR/tmp/) and the resulting executable (in
+   $G4WORKDIR/bin/).
+3) run "make" in your local sim/DressedSpin/shared directory.  If successful, the
+   library "libdressedSpin.a" will be created in $G4WORKDIR/tmp/Linux-g++.
+4) cd to one of the application directories, say "sim/DressedSpin/example",
+   and run make.  This creates an executable in $G4WORKDIR/bin/Linux-g++
+5) you may want to add the directory $G4WORKDIR/bin/Linux-g++ to your
+   PATH environment variable:
+      > export PATH=$PATH:$G4WORKDIR/bin/Linux-g++
+
+
+**********************************************************************
+The application executable can be run either interactively or
+(more conveniently) in batch mode.
+
+How to run in batch mode:
+     Example:
+      > sim_example test.mac temp.root
+
+1) The optional macro file should be in the standard Geant4 format of a
+   procedural list of commands.  The program exits after the last command
+   is completed.
+2) The optional ROOT filename is the name of the output file
+   ("temp.root" by default) which contains histograms created and filled
+   in the simulation.
+
+
+**********************************************************************
+To create your own application, copy one of the existing application
+directories and all its contents to a new directory, e.g.
+"cp -r example/ MyApp/" from within the sim/DressedSpin directory.
+Modify the code in your new directory as desired, change the name
+in the GNUMakefile ("name := sim_MyApp"), and run make.
+
+

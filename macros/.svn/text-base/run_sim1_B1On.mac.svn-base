@@ -1,0 +1,27 @@
+# set kinetic parameters
+/kinetics/SetTemperature 300
+/kinetics/SetPressure 1.0
+/kinetics/ShowParameters
+
+# set B-fields
+/BlochEq/SetHoldingFieldRadius 50.0 cm
+/BlochEq/SetHoldingFieldAtOrigin 0.260 gauss
+
+/BlochEq/SetEarthCompFieldRadius 25.4 cm
+/BlochEq/SetEarthCompFieldAtOrigin 0.66375 gauss
+
+/BlochEq/SetDressingFieldRadius 10 cm
+# choose Y = 0.8 = gamma*B0/(2*pi*f1)
+# For 0.400 gauss, gamma*B0 = 8157.5852 rad/s.
+#   f1 = gamma*B0/(2*pi*Y) = 1622.9 hertz
+# X = gamma*B1/(2*pi*f1)
+#   B1 = 2*pi*f1*X/gamma = 0.5*X gauss
+# /BlochEq/SetDressingFieldAtOrigin 0.0843 gauss
+/BlochEq/SetDressingFieldAtOrigin 0.250 gauss
+/BlochEq/SetDressingFieldFreq 1625 hertz
+
+/BlochEq/ShowParameters
+
+/run/beamOn 2
+# /FieldMap/Compute
+

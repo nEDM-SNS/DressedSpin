@@ -1,0 +1,75 @@
+# a simple condor submit file
+Universe = vanilla
+
+
+datadir = /data/npluser/smclayto/DressedSpin/nEDMCell
+macroname = run_nEDMCell_450mK_DelB10p0.mac
+simname = X0p0_450mK_DelB10p0
+
+Executable = run_sim.pl
+
+# requirements = (Memory >= 500) && (OpSys == "LINUX") && (Arch == "INTEL")
+
+requirements = (Memory >= 240) && \
+   (machine == "up.npl.uiuc.edu" || \
+    machine == "down.npl.uiuc.edu" || \
+    machine == "charm.npl.uiuc.edu" || \
+    machine == "strange.npl.uiuc.edu" || \
+    machine == "top.npl.uiuc.edu" || \
+    machine == "bottom.npl.uiuc.edu" || \
+    machine == "electricity.npl.uiuc.edu" || \
+    machine == "gravity.npl.uiuc.edu" || \
+    machine == "weak.npl.uiuc.edu" || \
+    machine == "strong.npl.uiuc.edu" || \
+    machine == "mulan1.npl.uiuc.edu" || \
+    machine == "mulan4.npl.uiuc.edu" || \
+    machine == "mottness.physics.uiuc.edu" || \
+    machine == "vfemmes.physics.uiuc.edu" || \
+    machine == "dahmen.physics.uiuc.edu" || \
+    machine == "wirth.physics.uiuc.edu" || \
+    machine == "phenix1.npl.uiuc.edu" || \
+    machine == "physlin101.physics.uiuc.edu" || \
+    machine == "physlin103.physics.uiuc.edu" || \
+    machine == "physlin104.physics.uiuc.edu" || \
+    machine == "hnode1.physics.uiuc.edu" || \
+    machine == "hnode2.physics.uiuc.edu" || \
+    machine == "hnode3.physics.uiuc.edu" || \
+    machine == "hnode4.physics.uiuc.edu" || \
+    machine == "hnode5.physics.uiuc.edu" || \
+    machine == "hnode6.physics.uiuc.edu" || \
+    machine == "hnode7.physics.uiuc.edu" || \
+    machine == "hnode8.physics.uiuc.edu" || \
+    machine == "hnode9.physics.uiuc.edu" || \
+    machine == "valinor1.physics.uiuc.edu" || \
+    machine == "valinor2.physics.uiuc.edu" || \
+    machine == "valinor3.physics.uiuc.edu" || \
+    machine == "valinor4.physics.uiuc.edu" || \
+    machine == "valinor5.physics.uiuc.edu" || \
+    machine == "valinor6.physics.uiuc.edu" || \
+    machine == "valinor7.physics.uiuc.edu" || \
+    machine == "valinor8.physics.uiuc.edu" || \
+    machine == "valinor9.physics.uiuc.edu" || \
+    machine == "valinor10.physics.uiuc.edu" || \
+    machine == "valinor11.physics.uiuc.edu" || \
+    machine == "valinor12.physics.uiuc.edu" || \
+    machine == "valinor13.physics.uiuc.edu" || \
+    machine == "valinor14.physics.uiuc.edu" || \
+    machine == "valinor15.physics.uiuc.edu" || \
+    machine == "valinor16.physics.uiuc.edu")
+
+
+# $(Process) is replaced by 0, 1, ... N-1, where N is the number of jobs
+# specified in the queue command below.
+# The input files run$(Process).mac must already be prepared.
+# The output directories for the ROOT files and STDOUT/STDERR files must already exist.
+arguments = $$(Arch) ../macros/$(macroname) $(datadir)/ROOT/sim_$(simname)_run$(Process).root
+output = $(datadir)/JobOut/sim_$(simname)_run$(Process).out
+error = $(datadir)/JobOut/sim_$(simname)_err.$(Process)
+
+# only email if job exits with an error
+Notification = Error
+
+log = /tmp/condor.log
+
+queue 100
+

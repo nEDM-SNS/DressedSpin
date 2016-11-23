@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sim/!svn/ver/58/DressedSpin/nEDMCell/src
+END
+detector_nEDMCell.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sim/!svn/ver/58/DressedSpin/nEDMCell/src/detector_nEDMCell.cc
+END
+fieldmapFile.cc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sim/!svn/ver/58/DressedSpin/nEDMCell/src/fieldmapFile.cc
+END
+nEDMCellPhysicsList.cc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sim/!svn/ver/58/DressedSpin/nEDMCell/src/nEDMCellPhysicsList.cc
+END
+BlochEq_nEDMField.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sim/!svn/ver/58/DressedSpin/nEDMCell/src/BlochEq_nEDMField.cc
+END
+nEDMCellTrackingAction.cc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sim/!svn/ver/44/DressedSpin/nEDMCell/src/nEDMCellTrackingAction.cc
+END
+init_Bx_pars.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sim/!svn/ver/35/DressedSpin/nEDMCell/src/init_Bx_pars.inc
+END
+init_By_pars.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sim/!svn/ver/35/DressedSpin/nEDMCell/src/init_By_pars.inc
+END
+init_Bz_pars.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sim/!svn/ver/35/DressedSpin/nEDMCell/src/init_Bz_pars.inc
+END

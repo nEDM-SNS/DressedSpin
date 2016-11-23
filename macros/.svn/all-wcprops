@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/sim/!svn/ver/48/DressedSpin/macros
+END
+vis.mac
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sim/!svn/ver/34/DressedSpin/macros/vis.mac
+END
+env.sh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sim/!svn/ver/34/DressedSpin/macros/env.sh
+END
+vis2.mac
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sim/!svn/ver/34/DressedSpin/macros/vis2.mac
+END
+run_UIUCTableTop.mac
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sim/!svn/ver/48/DressedSpin/macros/run_UIUCTableTop.mac
+END
+temp.mac
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sim/!svn/ver/34/DressedSpin/macros/temp.mac
+END
+env.csh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sim/!svn/ver/34/DressedSpin/macros/env.csh
+END
+run_nEDMCell.mac
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sim/!svn/ver/45/DressedSpin/macros/run_nEDMCell.mac
+END
+run_sim1_B1On_X0p50.mac
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sim/!svn/ver/34/DressedSpin/macros/run_sim1_B1On_X0p50.mac
+END
+run_mcgregor_AC.mac
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sim/!svn/ver/34/DressedSpin/macros/run_mcgregor_AC.mac
+END
+run_sim1_B1On.mac
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sim/!svn/ver/34/DressedSpin/macros/run_sim1_B1On.mac
+END
+run_sim2.mac
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sim/!svn/ver/45/DressedSpin/macros/run_sim2.mac
+END
+run_sim3.mac
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sim/!svn/ver/34/DressedSpin/macros/run_sim3.mac
+END
+run_mcgregor_DC.mac
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sim/!svn/ver/34/DressedSpin/macros/run_mcgregor_DC.mac
+END

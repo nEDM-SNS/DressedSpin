@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sim/!svn/ver/50/DressedSpin/shared/include
+END
+fieldMap.hh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/fieldMap.hh
+END
+MixingFraction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/MixingFraction.hh
+END
+dressedSpinPhysicsList.hh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sim/!svn/ver/45/DressedSpin/shared/include/dressedSpinPhysicsList.hh
+END
+dressedSpinEventAction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/dressedSpinEventAction.hh
+END
+neutralSpinRotation.hh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/neutralSpinRotation.hh
+END
+diffusionProcess.hh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/diffusionProcess.hh
+END
+dressedSpinDetectorConstruction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/dressedSpinDetectorConstruction.hh
+END
+diffusionBoundaryProcess.hh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sim/!svn/ver/50/DressedSpin/shared/include/diffusionBoundaryProcess.hh
+END
+dressedSpinMessenger.hh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/dressedSpinMessenger.hh
+END
+dressedSpinPrimaryGeneratorAction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sim/!svn/ver/45/DressedSpin/shared/include/dressedSpinPrimaryGeneratorAction.hh
+END
+HeVaporPressure.hh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/HeVaporPressure.hh
+END
+BlochEq_vxE.hh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/BlochEq_vxE.hh
+END
+helmholtzCoils.hh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/helmholtzCoils.hh
+END
+He3Atom.hh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/He3Atom.hh
+END
+dressedSpinRunManager.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/dressedSpinRunManager.hh
+END
+dressedSpin_utils.hh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/dressedSpin_utils.hh
+END
+diffusionMaterial.hh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sim/!svn/ver/34/DressedSpin/shared/include/diffusionMaterial.hh
+END
+dressedSpinParameters.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sim/!svn/ver/44/DressedSpin/shared/include/dressedSpinParameters.hh
+END
+periodicStepping.hh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sim/!svn/ver/50/DressedSpin/shared/include/periodicStepping.hh
+END
+BlochEq.hh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sim/!svn/ver/50/DressedSpin/shared/include/BlochEq.hh
+END

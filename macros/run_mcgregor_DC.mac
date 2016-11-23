@@ -1,0 +1,12 @@
+# set kinetic parameters
+/kinetics/SetTemperature 300
+/kinetics/SetPressure 1.0
+/kinetics/ShowParameters
+
+# set field gradient (dH_z/dx,dH_z/dy,dH_z/dz) in nT/cm
+/BlochEq/SetGradient 10 0 0
+/BlochEq/SetGradFreq 0 hertz
+/BlochEq/ShowParameters
+
+/run/beamOn 1
+

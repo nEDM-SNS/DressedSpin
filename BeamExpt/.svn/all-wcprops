@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/sim/!svn/ver/42/DressedSpin/BeamExpt
+END
+run_expt.mac
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sim/!svn/ver/42/DressedSpin/BeamExpt/run_expt.mac
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/GNUmakefile
+END
+beamExpt.cc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sim/!svn/ver/40/DressedSpin/BeamExpt/beamExpt.cc
+END
+vel_file.dat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/vel_file.dat
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/README
+END

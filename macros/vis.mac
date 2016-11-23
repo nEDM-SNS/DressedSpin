@@ -1,0 +1,22 @@
+#
+# Macro file for the initialization phase of "exampleN02.cc"
+# when runing in interactive mode
+#
+# Sets some default verbose
+#
+/control/verbose 2
+/run/verbose 2
+#
+# Create a scene handler for a specific graphics system
+# (Edit the next line(s) to choose another graphics system)
+#
+#
+/vis/open DAWNFILE
+#
+# draw scene
+#
+/vis/drawVolume
+#
+/vis/viewer/set/viewpointThetaPhi 90 180 deg
+/vis/viewer/zoom 1.4
+#

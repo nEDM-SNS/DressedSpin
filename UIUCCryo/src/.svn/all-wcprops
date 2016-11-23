@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sim/!svn/ver/34/DressedSpin/UIUCCryo/src
+END
+BlochEq_mcgregor90.cc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sim/!svn/ver/34/DressedSpin/UIUCCryo/src/BlochEq_mcgregor90.cc
+END
+detector_UIUCCryo.cc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sim/!svn/ver/34/DressedSpin/UIUCCryo/src/detector_UIUCCryo.cc
+END
+UIUCCryoPhysicsList.cc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sim/!svn/ver/34/DressedSpin/UIUCCryo/src/UIUCCryoPhysicsList.cc
+END
+UIUCCryoSteppingAction.cc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sim/!svn/ver/34/DressedSpin/UIUCCryo/src/UIUCCryoSteppingAction.cc
+END

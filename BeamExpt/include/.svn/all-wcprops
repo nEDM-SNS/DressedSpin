@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include
+END
+BlochEq_beamExpt.hh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/BlochEq_beamExpt.hh
+END
+beamExptPhysicsList.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/beamExptPhysicsList.hh
+END
+neutralSpinRotation.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/neutralSpinRotation.hh
+END
+beamExptEventAction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/beamExptEventAction.hh
+END
+beamExptTrackingAction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/beamExptTrackingAction.hh
+END
+beamExptBoundaryProcess.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/beamExptBoundaryProcess.hh
+END
+periodicStepping.hh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/periodicStepping.hh
+END
+beamExptDetectorConstruction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/beamExptDetectorConstruction.hh
+END
+BlochEq.hh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/BlochEq.hh
+END
+beamExptPrimaryGeneratorAction.hh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/beamExptPrimaryGeneratorAction.hh
+END
+He3Atom.hh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sim/!svn/ver/34/DressedSpin/BeamExpt/include/He3Atom.hh
+END
